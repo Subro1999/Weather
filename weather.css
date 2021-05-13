@@ -1,12 +1,14 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 .container-fluid{
-    background-image: url("https://www.timeanddate.com/scripts/weather_og.php?h1=Weather&h2=Local%20Weather%20Around%20the%20World");
+    background-image: url("https://images.unsplash.com/photo-1592210454359-9043f067919b?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8d2VhdGhlcnxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&w=1000&q=80");
     background-size: cover;
+    overflow: hidden;
     height: auto;
 }
 .row{
@@ -18,6 +20,7 @@
     background-size: cover;
     background-position: relative;
     color: blue;
+    opacity: 0.9;
     text-align: center;
     padding: 5rem;
 }
@@ -33,43 +36,52 @@
     color: #e4eff7;
 }
 .main{
-    background-color: chartreuse;
+    background-color: #b3d9ff;
 }
 .inputs{
     padding: 6rem 0 2rem 0;
     text-align: center;
     display: flex;
     justify-content: center;
+    border: none;
 }
 .inputs input[type="text"]{
     height: 3.5rem;
     width: 30rem;
-    background-color:#212121 ;
+    background-color:#fff ;
     font-weight: bold;
     font-size: 1.5rem;
-    border: none;
-    color: #e4eff7;
-    border-radius: 2px;
+    color: #000;
+    border-radius: 1px;
     margin-right: 4px;
+}
+#cityinput{
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bolder;
+    border-color: none;
+    border: none;
 }
 .inputs input[type="submit"]{
     height: 3.5rem;
     width: 6.5rem;
-    background-color: #212121;
-    color: #e4eff7;
+    background-color:#e4eff7 ;
+    color: #212121;
     font-weight: bold;
     border: none;
     border-radius: 2px;
 }
 .display{
     text-align: center;
-    color:#e4eff7;
+    color:#000;
+    overflow: hidden;
 }
 .wrapper{
     margin: 0 9rem;
+    padding-top: 55px;
     width: 50%;
-    background-color: #212121;
-    height: 40vh;
+    background-color: #cce0ff;
+    height: 60vh;
     margin: 50px auto;
     border-radius: 2px;
 }
